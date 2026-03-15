@@ -1,0 +1,6 @@
+---
+- name: Apply common baseline for Ubuntu/WSL development hosts
+  hosts: all
+  become: true
+  roles:
+    - role: common
