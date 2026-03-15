@@ -1,0 +1,9 @@
+# Minimal packages for local bootstrap
+ca-certificates
+curl
+git
+gnupg
+lsb-release
+make
+python3
+python3-pip
