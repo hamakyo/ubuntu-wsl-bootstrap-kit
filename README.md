@@ -105,17 +105,6 @@ make setup
 make verify
 ```
 
-### cloud-init の SSH 公開鍵の埋め込み
-
-`cloud-init/user-data.yml` の `ssh_authorized_keys` には `$SSH_PUBLIC_KEY` を使用しています。  
-cloud-init 自体は環境変数展開しないため、適用前に `envsubst` で実体化してください。
-
-```bash
-export SSH_PUBLIC_KEY="$(cat ~/.ssh/id_ed25519.pub)"
-envsubst < cloud-init/user-data.yml > /tmp/user-data.rendered.yml
-# 例: Proxmox/NoCloud などで /tmp/user-data.rendered.yml を user-data として利用
-```
-
 ## Before / After
 
 ### Before
