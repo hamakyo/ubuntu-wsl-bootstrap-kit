@@ -1,0 +1,18 @@
+{
+  "name": "ubuntu-wsl-bootstrap-kit",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker",
+        "redhat.ansible",
+        "timonwong.shellcheck"
+      ]
+    }
+  }
+}
