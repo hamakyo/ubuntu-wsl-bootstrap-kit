@@ -7,7 +7,7 @@ users:
     shell: /bin/bash
     sudo: ["ALL=(ALL) NOPASSWD:ALL"]
     ssh_authorized_keys:
-      - ${SSH_PUBLIC_KEY}
+      - "$SSH_PUBLIC_KEY"
 
 package_update: true
 package_upgrade: false

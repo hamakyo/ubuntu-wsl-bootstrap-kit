@@ -11,3 +11,5 @@ RUN apt-get update \
       npm \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+USER vscode
