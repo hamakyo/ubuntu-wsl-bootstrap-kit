@@ -119,7 +119,7 @@ envsubst < cloud-init/user-data.yml > /tmp/user-data.rendered.yml
 
 ## Demo
 
-ポートフォリオ用デモの最小シナリオ:
+デモの最小シナリオ:
 
 1. WSL Ubuntu で `make setup`
 2. `make verify` で必須コマンド確認
